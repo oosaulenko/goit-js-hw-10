@@ -1,25 +1,65 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&display=swap');
+@import "timer.css";
+@import "snackbar.css";
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+* {
+  box-sizing: border-box;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+body {
+  margin: 0;
+  font-family:  "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  background-color: #fff;
+  color: #212121;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1176px;
+
+  @media (max-width: 768px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media (max-width: 576px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+nav {
+  padding: 12px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+
+      a {
+        text-decoration: none;
+        color: #212121;
+        font-weight: 500;
+        padding: 12px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: #4e75ff;
+        }
+      }
+
+    }
+  }
 }

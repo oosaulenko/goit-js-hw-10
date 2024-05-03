@@ -1,0 +1,72 @@
+input#datetime-picker, button[data-start] {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2.2px;
+  padding: 8px 16px;
+}
+
+input#datetime-picker {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  color: #2E2F42;
+  outline: none;
+
+  &:disabled {
+    background-color: #F5F5F5;
+    border-color: #808080;
+  }
+
+  &:hover {
+    border-color: #000;
+  }
+
+  &:focus {
+    border-color: #4E75FF;
+  }
+}
+
+button[data-start] {
+  border-radius: 8px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  color: #fff;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #CFCFCF;
+    color: #989898;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    background-color: #6C8CFF;
+  }
+}
+
+.timer {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  .field {
+    color: #2E2F42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .value {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    .label {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+  }
+}
